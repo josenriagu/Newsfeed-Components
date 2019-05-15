@@ -4,7 +4,7 @@ const toggleMenu = () => {
   menu.classList.toggle('menu--open');
   clicked = !clicked
   if (clicked)
-  TweenLite.from(menu1, 1, { ease: Power4.easeInOut, x: 1200 }); 
+    TweenMax.from(menu1, 1, { ease: Power4.easeInOut, x: 1200 });
 }
 
 // Start Here: Create a reference to the ".menu" class
