@@ -30,3 +30,28 @@ let articles = document.querySelectorAll('.article');
 articles.forEach((article) => {
   new Article(article);
 })
+
+// STRETCH ANIMATION
+// Create variables
+const artty = document.querySelectorAll('.article');
+const menu1 = document.querySelector('.menu-button')
+
+window.addEventListener('load', () => {
+  TweenMax.from(artty, 3, { opacity: 0, bottom:600 });
+  // TweenMax.from(articler, 10, { x:600, rotation:360, scale:0.5 });
+  // console.log('LOADEEEDDDD!!!!!')
+  // TweenMax.to('.intro', 1.5, { opacity: 1, delay: 1.5 });
+  // TweenMax.to('.content-section', 1.5, { opacity: 1, delay: 3 });
+  // TweenMax.to('.content-destination', 1.5, { opacity: 1, delay: 4.5 });
+  // TweenMax.to('.content-pick', 1.5, { opacity: 1, delay: 5.5 });
+  // TweenMax.to('.footer', 1.5, { opacity: 3, delay: 6.5 });
+});
+
+// menu1.addEventListener('click', () => {
+//   console.log('clicked')
+//   TweenLite.from(menu1, 1, { ease: Bounce.easeInOut, x: 1200 });
+// })
+
+// TweenMax.to('.menu-button', 2, {left: 600, backgroundColor: 'red'});
+// TweenMax.to(article, 2, {boxShadow:"0px 0px 20px red", color:"red", ease: power4});
+// TweenLite.to(articler, 2.5, { ease: Power4.easeInOut, x: "400%" });
